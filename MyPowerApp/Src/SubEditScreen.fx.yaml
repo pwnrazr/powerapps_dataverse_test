@@ -206,10 +206,10 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@banana_subs],DataSourceInfo.DisplayName,"cr864_map_data")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =130
             MaxLength: =DataSourceInfo([@banana_subs], DataSourceInfo.MaxLength, "cr864_map_data")
             Required: =false
-            Update: =DataCardValue5.Text
+            Update: =Label2.Text
             Width: =640
             X: =0
             Y: =2
@@ -226,25 +226,6 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
-
             ErrorMessage5 As label:
                 AutoHeight: =true
                 Height: =10
@@ -258,7 +239,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue5.Y + DataCardValue5.Height
+                Y: =Label2.Y + Label2.Height
                 ZIndex: =3
 
             StarVisible5 As label:
@@ -271,6 +252,16 @@
                 Wrap: =false
                 Y: =DataCardKey5.Y
                 ZIndex: =4
+
+            Label2 As label:
+                Height: =70
+                Size: =21
+                Text: |-
+                    ="Lat: " & Location.Latitude & " Lon: " & Location.Longitude
+                Width: =580
+                X: =30
+                Y: =58
+                ZIndex: =5
 
         custom_date_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -392,20 +383,4 @@
                 Wrap: =false
                 Y: =DataCardKey7.Y
                 ZIndex: =7
-
-    IconDelete1_1 As icon.Trash:
-        AccessibleLabel: =Self.Tooltip
-        DisplayMode: =If(!IsBlank(BrowseGallery1.Selected) && DataSourceInfo([@bananas], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
-        Height: =88
-        Icon: =Icon.Trash
-        OnSelect: =Remove([@banana_subs], SubGallery1.Selected); If (IsEmpty(Errors([@banana_subs], SubGallery1.Selected)), Navigate(DetailScreen1))
-        PaddingBottom: =24
-        PaddingLeft: =24
-        PaddingRight: =24
-        PaddingTop: =24
-        TabIndex: =0
-        Tooltip: ="Delete this item"
-        Width: =88
-        X: =464
-        ZIndex: =6
 

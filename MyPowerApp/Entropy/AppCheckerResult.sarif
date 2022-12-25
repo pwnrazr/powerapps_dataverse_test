@@ -404,36 +404,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SubEditScreen.SubEditForm.map_data_DataCard1.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SubEditScreen.SubEditForm.map_data_DataCard1.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SubEditScreen",
-                "type": "SubEditScreen.SubEditForm.map_data_DataCard1.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SubEditScreen.SubEditForm.custom_date_DataCard1.DateValue1.AccessibleLabel"
                 }
               ],
@@ -644,19 +614,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SubEditScreen.IconDelete1_1.DisplayMode"
+                  "fullyQualifiedName": "SubViewScreen.IconDelete1_1.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SubEditScreen.IconDelete1_1.DisplayMode",
+                  "fullyQualifiedName": "SubViewScreen.IconDelete1_1.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
-                "module": "SubEditScreen",
-                "type": "SubEditScreen.IconDelete1_1"
+                "module": "SubViewScreen",
+                "type": "SubViewScreen.IconDelete1_1"
               }
             }
           ],

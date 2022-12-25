@@ -23,7 +23,7 @@
         Height: =88
         Size: =27
         Text: ="Sub View"
-        Width: =464
+        Width: =376
         Wrap: =false
         X: =88
         ZIndex: =4
@@ -203,4 +203,20 @@
         Width: =88
         X: =552
         ZIndex: =6
+
+    IconDelete1_1 As icon.Trash:
+        AccessibleLabel: =Self.Tooltip
+        DisplayMode: =If(!IsBlank(BrowseGallery1.Selected) && DataSourceInfo([@bananas], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
+        Height: =88
+        Icon: =Icon.Trash
+        OnSelect: =Remove([@banana_subs], SubGallery1.Selected); If (IsEmpty(Errors([@banana_subs], SubGallery1.Selected)), Back())
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        TabIndex: =0
+        Tooltip: ="Delete this item"
+        Width: =88
+        X: =464
+        ZIndex: =7
 
