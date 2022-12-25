@@ -1,0 +1,99 @@
+[
+  {
+    "DisplayName": "banana_subs (Views)",
+    "Name": "_cr864_banana_sub_views",
+    "RelatedEntityName": "banana_subs",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "6b4cb9e0-10bf-4160-ba50-9ce88456b43e": "Inactive banana_subs",
+      "7e393438-a0b1-45bf-8470-5c7da7c7b7cd": "Active banana_subs",
+      "9651c3db-0146-4ff5-b70a-57aea8327c29": "banana_sub Lookup View",
+      "a1305246-1540-4ce9-bf87-19ff7c8523c2": "banana_sub Associated View",
+      "a9362490-f028-44fc-863c-ee1aebd37d4a": "banana_sub Advanced Find View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr864_banana_subs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr864_banana_sub",
+    "MaxGetRowsCount": 500,
+    "Name": "banana_subs",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr864_banana_owner": "banana_owner",
+      "cr864_banana_sub_AsyncOperations": "System Jobs",
+      "cr864_banana_sub_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr864_banana_sub_DuplicateBaseRecord": "Duplicate Records (cr864_banana_sub_DuplicateBaseRecord)",
+      "cr864_banana_sub_DuplicateMatchingRecord": "Duplicate Records (cr864_banana_sub_DuplicateMatchingRecord)",
+      "cr864_banana_sub_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr864_banana_sub_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr864_banana_sub_ProcessSession": "Process Sessions",
+      "cr864_banana_sub_SyncErrors": "Sync Errors",
+      "cr864_banana_subid": "banana_sub",
+      "cr864_cheese": "cheese",
+      "cr864_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "banana_subs",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (banana_subs)",
+    "Name": "cr864_banana_sub_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "banana_subs"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "banana_subs",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (banana_subs)",
+    "Name": "cr864_banana_sub_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "banana_subs"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "banana_subs",
+    "Type": "OptionSetInfo"
+  }
+]

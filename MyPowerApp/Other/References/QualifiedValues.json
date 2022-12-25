@@ -1,0 +1,18 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr864_banana_forms",
+      "Namespace": "bananas (Forms)",
+      "Values": {
+        "Information": "48ff8b1e-029d-482c-8b08-a40523c1bbda"
+      }
+    },
+    {
+      "Kind": "default.cds_cr864_banana_sub_forms",
+      "Namespace": "banana_subs (Forms)",
+      "Values": {
+        "Information": "32d95137-1750-4e43-9943-a281c7da071e"
+      }
+    }
+  ]
+}
