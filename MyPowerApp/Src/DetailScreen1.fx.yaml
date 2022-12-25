@@ -7,7 +7,23 @@
 
     "SubGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Height: =348
-        Items: =SortByColumns(Search(Filter(banana_subs,  banana_owner = BrowseGallery1.Selected.Title), sublist_searchbox.Text, "cr864_name"), "createdon", If(SortDescendingSub, Descending, Ascending))
+        Items: |-
+            =SortByColumns(
+                Search(
+                    Filter(
+                        banana_subs,
+                        item_parent = BrowseGallery1.Selected.Title
+                    ),
+                    sublist_searchbox.Text,
+                    "cr864_name"
+                ),
+                "createdon",
+                If(
+                    SortDescendingSub,
+                    Descending,
+                    Ascending
+                )
+            )
         Layout: =Layout.Vertical
         OnSelect: =Navigate(SubEditScreen)
         TemplatePadding: =0
@@ -50,7 +66,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.cheese
+            Text: =ThisItem.cr864_cheese
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
@@ -119,7 +135,7 @@
             =Remove([@bananas], BrowseGallery1.Selected); Remove([@banana_subs], SubGallery1.AllItems);
             If(
                 IsEmpty(Errors([@bananas], BrowseGallery1.Selected)) &&
-                IsEmpty(Filter([@banana_subs],  banana_owner = BrowseGallery1.Selected.Title))
+                IsEmpty(Filter([@banana_subs],  item_parent = BrowseGallery1.Selected.Title))
                 , Back())
         PaddingBottom: =24
         PaddingLeft: =24

@@ -55,13 +55,13 @@
 
         banana_owner_DataCard5 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="cr864_banana_owner"
-            Default: =ThisItem.banana_owner
+            DataField: ="cr864_item_parent"
+            Default: =ThisItem.cr864_item_parent
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@banana_subs],DataSourceInfo.DisplayName,"cr864_banana_owner")
+            DisplayName: =DataSourceInfo([@banana_subs],DataSourceInfo.DisplayName,"cr864_item_parent")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@banana_subs], DataSourceInfo.MaxLength, "cr864_banana_owner")
+            MaxLength: =DataSourceInfo([@banana_subs], DataSourceInfo.MaxLength, "cr864_item_parent")
             Required: =false
             Update: =DataCardValue16.Text
             Width: =640
@@ -202,7 +202,7 @@
         cheese_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr864_cheese"
-            Default: =ThisItem.cheese
+            Default: =ThisItem.cr864_cheese
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@banana_subs],DataSourceInfo.DisplayName,"cr864_cheese")
             Fill: =RGBA(0, 0, 0, 0)

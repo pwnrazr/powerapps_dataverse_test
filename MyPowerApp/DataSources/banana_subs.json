@@ -6,11 +6,11 @@
     "TrimmedViewName": true,
     "Type": "ViewInfo",
     "ViewInfoNameMapping": {
-      "6b4cb9e0-10bf-4160-ba50-9ce88456b43e": "Inactive banana_subs",
-      "7e393438-a0b1-45bf-8470-5c7da7c7b7cd": "Active banana_subs",
-      "9651c3db-0146-4ff5-b70a-57aea8327c29": "banana_sub Lookup View",
-      "a1305246-1540-4ce9-bf87-19ff7c8523c2": "banana_sub Associated View",
-      "a9362490-f028-44fc-863c-ee1aebd37d4a": "banana_sub Advanced Find View"
+      "3c83a333-f06d-418d-a6ae-89a85b323784": "Active banana_subs",
+      "5b5853f9-28aa-4052-b696-17e52f200f58": "banana_sub Advanced Find View",
+      "977b5bd4-823c-4ec8-a5ca-f77451eba392": "banana_sub Associated View",
+      "be0e9d19-f554-4389-a273-61d00b80f4e3": "Inactive banana_subs",
+      "f4172f27-f5ed-4d5d-ae27-0d2a5c54c892": "banana_sub Lookup View"
     }
   },
   {
@@ -20,11 +20,9 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr864_banana_sub",
-    "MaxGetRowsCount": 500,
     "Name": "banana_subs",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
-      "cr864_banana_owner": "banana_owner",
       "cr864_banana_sub_AsyncOperations": "System Jobs",
       "cr864_banana_sub_BulkDeleteFailures": "Bulk Delete Failures",
       "cr864_banana_sub_DuplicateBaseRecord": "Duplicate Records (cr864_banana_sub_DuplicateBaseRecord)",
@@ -35,6 +33,7 @@
       "cr864_banana_sub_SyncErrors": "Sync Errors",
       "cr864_banana_subid": "banana_sub",
       "cr864_cheese": "cheese",
+      "cr864_item_parent": "item_parent",
       "cr864_name": "Name",
       "createdby": "Created By",
       "createdon": "Created On",
