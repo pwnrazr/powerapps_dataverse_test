@@ -115,6 +115,7 @@
     "BrowseScreen1",
     "DetailScreen1",
     "EditScreen1",
-    "SubEditScreen"
+    "SubEditScreen",
+    "SubViewScreen"
   ]
 }

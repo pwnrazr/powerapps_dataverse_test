@@ -20,6 +20,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr864_banana_sub",
+    "MaxGetRowsCount": 500,
     "Name": "banana_subs",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -32,8 +33,9 @@
       "cr864_banana_sub_ProcessSession": "Process Sessions",
       "cr864_banana_sub_SyncErrors": "Sync Errors",
       "cr864_banana_subid": "banana_sub",
-      "cr864_cheese": "cheese",
+      "cr864_custom_date": "custom_date",
       "cr864_item_parent": "item_parent",
+      "cr864_map_data": "map_data",
       "cr864_name": "Name",
       "createdby": "Created By",
       "createdon": "Created On",
